@@ -12,6 +12,17 @@
     	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     	<!-- Add SlickNav JS -->
     	<script src="https://cdn.jsdelivr.net/npm/slicknav@1.0.7/dist/jquery.slicknav.min.js"></script>
+	<script>
+        $(document).ready(function() {
+            // Initialize the SlickNav for mobile menu
+            $('#nav_menu').slicknav({
+                label: '',
+                prependTo: '#mobile_menu',
+                closedSymbol: '&#9654;',
+                openedSymbol: '&#9660;'
+            });
+        });
+    </script>
 </head>
 
 <body>
