@@ -181,15 +181,15 @@ footer p {
 }
 
 @media only screen and (max-width: 730px) {
-	section h1 {
-		font-size: 125%
-	}
-	section h2, aside h2 {
-		font-size: 110%;
-	}
-	aside h3 a {
-		font-size: 85%;
-	}
+    #nav_menu ul {
+        display: none; 
+    }
+    #mobile_menu {
+        display: block; 
+    }
+    .slicknav_menu {
+        display: block !important; 
+    }
 }
 
 @media only screen and (max-width: 645px){
