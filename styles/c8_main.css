@@ -11,7 +11,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 99%;
+    width: 98%;
     max-width: 960px;
     margin: 0 auto;
     border: 3px solid #931420;
@@ -57,7 +57,8 @@ header img {
 }
 
 #nav_menu ul li {
-    position: relative;
+    float: left;
+    width: 20%;
 }
 
 #nav_menu ul li a {
@@ -68,7 +69,6 @@ header img {
     background-color: #800000;
     color: white;
     font-weight: bold;
-    overflow: hidden;
 }
 
 #nav_menu a.current {
@@ -80,7 +80,6 @@ header img {
     width: 20%; 
     position: absolute;
     top: 100%;
-    right: 0; 
 }
 
 #nav_menu ul ul li {
@@ -89,7 +88,6 @@ header img {
 
 #nav_menu ul li:hover > ul {
     display: block;
-    width: 100%
 }
 
 #nav_menu > ul::after {
@@ -193,71 +191,60 @@ footer p {
     padding: 1em 0;
 }
 
-/* style for mobile */
-#mobile_menu {
-    display: none;
+@media only screen and (min-width: 645px){
+	#mobile_menu{
+		display:none;
+	}
 }
+@media only screen and (max-width:730px){
+	section h1{
+		font-size: 125%;
+	}
+	section h2, aside h2{
+		font-size: 110%;
+	}
+	aside h3 a{
+		font-size:85%;
+	}
+	section{
+		width:95%;
+	}
 
-@media (max-width: 768px) {
-    #mobile_menu {
-        display: block;
-    }
-
-    #nav_menu {
-        display: none;
-    }
-
-    .slicknav_menu {
-        display: block;
-    }
-
-    .slicknav_btn {
-        display: block;
-    }
+	
 }
-@media only screen and (max-width: 645px) {
-    header img {
-        float: none;
-    }
-
-    header {
-        text-align: center;
-    }
-
-    section {
-        float: none;
-        width: 95%; /* percentage width */
-    }
-
-    aside {
-        float: none;
-        width: 95%; /* percentage width */
-        padding-right: 2.5%;
-    }
-
-    article img {
-        max-width: 30%; /* scalable image */
-    }
-
-    aside {
-        column-count: 2; /* two columns for speakers */
-    }
-
-    #nav_menu {
-        display: none;
-    }
-
-    #mobile_menu {
-        display: block;
-    }
-
-    .slicknav_menu {
-        background-color: #800000 !important;
-    }
+@media only screen and (max-width:645px){
+	header img{
+		float:none;
+	}
+	header{
+		text-align:center;
+	}
+	section{
+		float:none;
+	}
+	aside{
+		float: none;
+		width:95%;
+		padding-right:2.5%;
+	}
+	article img{
+		max-width:30%;
+	}
+	#speakers{
+		column-count:2;
+	}
+	#nav_menu{
+		display:none;
+	}
+	#mobile_menu{
+		display:block;
+	}
+	.slicknav_menu{
+		background-color:#800000 !important;
+	}
 }
-
-@media only screen and (max-width: 415px) {
-    body {
-        font-size: 90%; /* responsive font size */
-    }
+@media only screen and (max-width:415px){
+	body{
+		font-size: 90%;
+	}
 }
