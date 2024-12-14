@@ -57,8 +57,7 @@ header img {
 }
 
 #nav_menu ul li {
-    float: left;
-    width: 20%; 
+    position: relative;
 }
 
 #nav_menu ul li a {
